@@ -1,0 +1,312 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-margin-top: 60px;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --primary: #ffbc0d;
+  --secondary: #c08b00;
+  --tertiary: #c06c84;
+  --quaternary: #6c5b7b;
+  --quintenary: #548fc3;
+
+  --white: white;
+  --gray: #ebebeb;
+  --black: black;
+}
+
+html {
+  background-color: var(--gray);
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+/* Header */
+.header {
+  background-color: var(--white);
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.header__logo-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--primary);
+  width: max-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header__logo {
+  width: 50px;
+}
+
+.header__logo-text {
+  margin-left: 10px;
+}
+
+.navsito {
+  position: sticky;
+  top: 0;
+  box-shadow: 0px 19px 16px -20px rgba(0, 0, 0, 0.75);
+}
+
+.header__nav {
+  background-color: var(--white);
+
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.header__nav-list {
+  display: flex;
+  justify-content: center;
+  column-gap: 20px;
+}
+
+.header__nav-item {
+  list-style: none;
+}
+
+.header__nav-link {
+  color: var(--black);
+}
+
+.header__nav-link:hover {
+  color: var(--primary);
+}
+
+main {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+/* Section 1 | burgers */
+.hamburguesa {
+  text-align: center;
+}
+
+.hamburguesa__content {
+  display: flex;
+  align-items: center;
+  overflow-x: scroll;
+  min-width: 75%;
+}
+
+.hamburguesa__imagen {
+  margin-left: 20px;
+  margin-right: 20px;
+  min-width: 280px;
+  min-height: 150px;
+  height: 150px;
+  border-radius: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  object-fit: cover;
+}
+
+/* Section 2 | Formularios */
+
+.menu {
+  margin: 20px;
+  padding: 20px;
+  background-color: var(--gray);
+  border: 2px solid var(--quaternary);
+  border-radius: 4px;
+}
+
+.menu__title {
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--quaternary);
+  background-color: white;
+  border-radius: 20px;
+  padding: 5px;
+  border: 2px solid var(--quaternary);
+}
+
+.menu__item {
+  margin-bottom: 10px;
+}
+
+footer {
+  text-align: center;
+}
+
+.footer__content {
+  background-color: var(--secondary);
+  color: white;
+  padding: 60px 10px 10px;
+}
+
+.footer__nav {
+  margin-bottom: 30px;
+}
+
+.footer__list {
+  list-style: none;
+}
+
+.footer__link {
+  color: var(--white);
+  margin-bottom: 10px;
+}
+
+/* wave */
+.container {
+  position: relative;
+  background: var(--gray);
+  height: 100px;
+  overflow: hidden;
+}
+
+.wave {
+  position: absolute;
+  height: 70px;
+  width: 100%;
+  background: var(--gray);
+  bottom: 0;
+}
+
+.wave::before,
+.wave::after {
+  content: "";
+  display: block;
+  position: absolute;
+  border-radius: 100% 50%;
+}
+
+.wave::before {
+  width: 55%;
+  height: 109%;
+  background-color: var(--secondary);
+  right: -1.5%;
+  top: 60%;
+}
+.wave::after {
+  width: 55%;
+  height: 100%;
+  background-color: var(--gray);
+  left: -1.5%;
+  top: 40%;
+}
+/* wave */
+
+input[type="checkbox"]:checked {
+  accent-color: var(--primary);
+}
+
+input[type="radio"]:checked {
+  accent-color: var(--primary);
+}
+
+label {
+  font-size: 16px;
+  color: var(--black);
+}
+
+.menu__input-text {
+  background-color: var(--white);
+  border: none;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.menu__select {
+  border: none;
+  background-color: var(--white);
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.detalles {
+  padding: 10px;
+}
+
+.detalles__article {
+  margin-top: 20px;
+}
+
+.detalles__article-title {
+  color: var(--primary);
+}
+
+.detalles__article-paragraph {
+  margin-top: 10px;
+  color: var(--secondary);
+}
+
+/*! ------------------ */
+/*!    Query Tablet    */
+/*! ------------------ */
+@media (min-width: 480px) {
+  .header__nav-link {
+    font-size: 20px;
+  }
+}
+
+/*! ------------------ */
+/*!    Query Laptop    */
+/*! ------------------ */
+@media (min-width: 768px) {
+  .hamburguesa__imagen {
+    margin-left: 50px;
+    margin-right: 50px;
+    min-width: 400px;
+    min-height: 300px;
+    height: 300px;
+  }
+
+  .menu__title {
+    font-size: 24px;
+  }
+
+  label {
+    font-size: 18px;
+  }
+
+  .detalles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .detalles__article {
+    margin-top: 0;
+    width: 600px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+  }
+}
+
+/*! ------------------ */
+/*!      Query PC      */
+/*! ------------------ **/
+@media (min-width: 1200px) {
+  .header__logo {
+    width: 80px;
+  }
+
+  .header__logo-text {
+    font-size: 50px;
+  }
+
+  .header__nav-list {
+    column-gap: 50px;
+  }
+
+  .header__nav-link {
+    font-size: 30px;
+  }
+}

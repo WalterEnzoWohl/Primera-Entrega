@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Title -->
+    <title>WohlBurgers</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+
+  <body class="bg-dark text-light">
+    <header class="header">
+      <a
+        class="header__logo-link"
+        href="./index.html"
+        aria-current="page"
+        aria-label="Home"
+        rel="nofollow noreferrer"
+      >
+        <img
+          class="header__logo"
+          src="./images/wohlburguericon.svg"
+          alt="Logo"
+        />
+        <h1 class="header__logo-text">Wohl Burgers</h1>
+      </a>
+    </header>
+
+    <section class="navsito">
+      <nav class="header__nav" aria-label="Main Navigation">
+        <ul class="header__nav-list">
+          <li class="header__nav-item">
+            <a
+              class="header__nav-link"
+              href="#Menu"
+              aria-label="Menu"
+              rel="nofollow noreferrer"
+            >
+              <b>Menu</b>
+            </a>
+          </li>
+          <li class="header__nav-item">
+            <a
+              class="header__nav-link"
+              href="#Pedidos"
+              aria-label="Pedidos"
+              rel="nofollow noreferrer"
+            >
+              <b>Pedidos</b>
+            </a>
+          </li>
+          <li class="header__nav-item">
+            <a
+              class="header__nav-link"
+              href="#Nosotros"
+              aria-label="Sobre Nosotros"
+              rel="nofollow noreferrer"
+            >
+              <b>Sobre Nosotros</b>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </section>
+
+    <main>
+      <section class="hamburguesa" id="Menu">
+        <h2 class="hamburguesa__title">Hamburguesas Artesanales</h2>
+        <article class="hamburguesa__content">
+          <img
+            class="hamburguesa__imagen"
+            src="./images/hamburguesa-1.jpeg"
+            alt="imagen de hamburguesa"
+          />
+          <img
+            class="hamburguesa__imagen"
+            src="./images/hamburguesa-2.jpg"
+            alt="imagen de hamburguesa"
+          />
+          <img
+            class="hamburguesa__imagen"
+            src="./images/hamburguesa-3.jpg"
+            alt="imagen de hamburguesa"
+          />
+        </article>
+      </section>
+
+      <section id="Pedidos">
+        <form action="" class="form">
+          <fieldset class="menu">
+            <legend class="menu__title">MENU</legend>
+            <div class="menu__item">
+              <input
+                type="checkbox"
+                name="hamburguesa-Simple"
+                id="simple"
+                aria-label="Hamburguesa Simple Con queso"
+              />
+              <label for="simple" class="menu__label"
+                >Hamburguesa Simple Con queso</label
+              >
+            </div>
+
+            <div class="menu__item">
+              <input
+                type="checkbox"
+                name="hamburguesa-doble"
+                id="doble"
+                aria-label="Hamburguesa Doble Con queso"
+              />
+              <label for="doble" class="menu__label"
+                >Hamburguesa Doble Con queso</label
+              >
+            </div>
+
+            <div class="menu__item">
+              <input
+                type="checkbox"
+                name="hamburguesa-triple"
+                id="triple"
+                aria-label="Hamburguesa Triple Con queso"
+              />
+              <label for="triple" class="menu__label"
+                >Hamburguesa Triple Con queso</label
+              >
+            </div>
+
+            <div class="menu__item">
+              <input
+                type="checkbox"
+                name="Papas Fritas Medianas"
+                id="papasMedianas"
+                aria-label="Papas Fritas Medianas"
+              />
+              <label for="papasMedianas" class="menu__label"
+                >Papas Fritas Medianas</label
+              >
+            </div>
+
+            <div class="menu__item">
+              <input
+                type="checkbox"
+                name="Papas Fritas Grandes"
+                id="papasGrandes"
+                aria-label="Papas Fritas Grandes"
+              />
+              <label for="papasGrandes" class="menu__label"
+                >Papas Fritas Grandes</label
+              >
+            </div>
+          </fieldset>
+        </form>
+
+        <form action="" class="form">
+          <fieldset class="menu">
+            <legend class="menu__title">Haz Tu Pedido!!</legend>
+            <div class="menu__item">
+              <label for="fullName" class="menu__label">
+                <span>Nombre:</span>
+                <input
+                  id="fullName"
+                  type="text"
+                  required
+                  minlength="5"
+                  maxlength="30"
+                  placeholder="Nombre Completo"
+                  aria-label="Nombre Completo"
+                  class="menu__input-text"
+                />
+              </label>
+            </div>
+            <div class="menu__item">
+              <h3 for="ubicacion">Zona de Ubicacion:</h3>
+              <label for="tigre" class="menu__label">
+                <input
+                  type="radio"
+                  name="ubicaciongeneral"
+                  id="tigre"
+                  aria-label="Tigre"
+                />
+                <span>Tigre</span>
+              </label>
+
+              <label for="caballito" class="menu__label">
+                <input
+                  type="radio"
+                  name="ubicaciongeneral"
+                  id="caballito"
+                  aria-label="Caballito"
+                />
+                <span>Caballito</span>
+              </label>
+
+              <label for="escobar" class="menu__label">
+                <input
+                  type="radio"
+                  name="ubicaciongeneral"
+                  id="escobar"
+                  aria-label="Escobar"
+                />
+                <span>Escobar</span>
+              </label>
+
+              <label for="garin" class="menu__label">
+                <input
+                  type="radio"
+                  name="ubicaciongeneral"
+                  id="garin"
+                  aria-label="Garin"
+                />
+                <span>Garin</span>
+              </label>
+            </div>
+
+            <div class="menu__item">
+              <label for="direccion" class="menu__label">
+                <span>Direccion:</span>
+                <input
+                  id="direccion"
+                  type="text"
+                  required
+                  minlength="5"
+                  maxlength="30"
+                  placeholder="Direccion Exacta"
+                  aria-label="Direccion"
+                  class="menu__input-text"
+                />
+              </label>
+            </div>
+          </fieldset>
+        </form>
+
+        <form action="" class="form">
+          <fieldset class="menu">
+            <legend class="menu__title">Pagar</legend>
+            <label for="metodoPago" class="menu__label">
+              <span>Metodo de Pago:</span>
+              <select
+                name="metodoPago"
+                id="metodoPago"
+                class="menu__select"
+                required
+              >
+                <option value="" disabled selected>Seleccionar...</option>
+                <option value="Pago-Efectivo">Efectivo</option>
+                <option value="Pago-MercadoPago">MercadoPago</option>
+                <option value="Pago-Mastercard">Mastercard</option>
+                <option value="Pago-VISA">Visa</option>
+              </select>
+            </label>
+          </fieldset>
+        </form>
+      </section>
+
+      <section class="detalles" id="Nosotros">
+        <article class="detalles__article">
+          <h2 class="detalles__article-title">
+            Bienvenido a nuestra Hamburguesería Artesanal
+          </h2>
+          <p class="detalles__article-paragraph">
+            En nuestra hamburguesería artesanal, nos enorgullece ofrecerte
+            deliciosas hamburguesas hechas con los mejores ingredientes y con un
+            toque casero que las hace únicas.
+          </p>
+        </article>
+
+        <article class="detalles__article">
+          <h2 class="detalles__article-title">Nuestra filosofía</h2>
+          <p class="detalles__article-paragraph">
+            En cada hamburguesa que preparamos, nos esforzamos por ofrecer una
+            experiencia culinaria excepcional. Utilizamos carne de la más alta
+            calidad, sazonada y cocinada a la perfección para garantizar un
+            sabor increíble en cada bocado.
+          </p>
+          <p class="detalles__article-paragraph">
+            No solo nos preocupamos por la calidad de nuestros ingredientes,
+            sino también por la frescura. Nuestras hamburguesas se preparan al
+            momento, asegurando que cada una esté recién hecha y lista para
+            satisfacer tu apetito.
+          </p>
+        </article>
+
+        <article class="detalles__article">
+          <h2 class="detalles__article-title">Nuestro menú</h2>
+          <p class="detalles__article-paragraph">
+            Ofrecemos una amplia variedad de opciones en nuestro menú, desde las
+            clásicas hamburguesas con queso hasta opciones más gourmet con
+            ingredientes especiales. También contamos con hamburguesas
+            vegetarianas y veganas, para satisfacer los diferentes gustos y
+            necesidades alimenticias.
+          </p>
+          <p class="detalles__article-paragraph">
+            Acompaña tu hamburguesa con nuestras deliciosas papas fritas caseras
+            y disfruta de una refrescante bebida de nuestra selección. Y no
+            olvides probar nuestros postres artesanales, que pondrán el broche
+            de oro a tu experiencia gastronómica.
+          </p>
+        </article>
+
+        <article class="detalles__article">
+          <h2 class="detalles__article-title">Visítanos</h2>
+          <p class="detalles__article-paragraph">
+            Estamos ubicados en el corazón de la ciudad, con un ambiente
+            acogedor y un personal amable que estará encantado de atenderte. Ven
+            a disfrutar de nuestras hamburguesas artesanales y descubre por qué
+            somos el lugar preferido de los amantes de las hamburguesas.
+          </p>
+        </article>
+      </section>
+    </main>
+
+    <footer>
+      <section class="container">
+        <div class="wave"></div>
+      </section>
+      <section class="footer__content">
+        <article class="footer__article">
+          <nav class="footer__nav">
+            <ul class="footer__list">
+              <li class="footer__list-item">
+                <a href="#Menu" class="footer__link">Inicio</a>
+              </li>
+              <li class="footer__list-item">
+                <a href="#Nosotros" class="footer__link">Acerca de nosotros</a>
+              </li>
+              <li class="footer__list-item">
+                <a href="#" class="footer__link">Servicios</a>
+              </li>
+              <li class="footer__list-item">
+                <a href="#" class="footer__link">Contacto</a>
+              </li>
+            </ul>
+          </nav>
+        </article>
+        <article class="footer__article">
+          <p class="footer__copyright">
+            &copy; 2023 WohlBurgers. Todos los derechos reservados.
+          </p>
+        </article>
+      </section>
+    </footer>
+  </body>
+</html>
